@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EZee Assist Public chat</title>
+    <script type="module" crossorigin src="/assets/index-DoF4fgCT.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <input id="user_email" value="abcd@mail.com" style="display:none;">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        /* use this block to configure the chat component */
+
+        window.ezee.setupChatConfig({
+          publicToken: "gAAAAABotc_QJlZZsXeET_ORtJabkdds6N71TCI6k6GPxlXZoJWVcG4o6kf7ZW2LL6nNKw2wAS0FFDGfGZiPlWmVf8xpbfm98PV1RNEUoVpm3S1v4t050Scyh_UOY0KROTsv1wKcYi-o3UGbu0JdHqd-UJgaQOcv1Q==",
+          myinput: $('#user_email').val()
+        });
+        
+        window.ezee.initChat();
+      });
+    </script>
+  </body>
+</html>
